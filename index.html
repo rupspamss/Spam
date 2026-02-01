@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Spam 💌</title>
+  <style>
+    body {
+      text-align: center;
+      font-family: Arial;
+      background: #ffe6f0;
+      margin-top: 100px;
+    }
+    h1 { color: #e60073; }
+    button {
+      padding: 15px 25px;
+      font-size: 18px;
+      margin: 20px;
+      border: none;
+      border-radius: 10px;
+    }
+    #yes {
+      background-color: #ff4d88;
+      color: white;
+    }
+    #no {
+      background-color: #999;
+      color: white;
+      position: absolute;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Hey Khaja ❤️</h1>
+  <h2>Will you be my Valentine? 💘</h2>
+
+  <button id="yes" onclick="alert('YAYYY 💖 I love you Khaja 😘')">
+    YES 💕
+  </button>
+
+  <button id="no">NO 😜</button>
+
+  <script>
+    const noBtn = document.getElementById("no");
+    noBtn.addEventListener("touchstart", move);
+    noBtn.addEventListener("mouseover", move);
+
+    function move() {
+      noBtn.style.left = Math.random() * 300 + "px";
+      noBtn.style.top = Math.random() * 300 + "px";
+    }
+  </script>
+</body>
+</html>
